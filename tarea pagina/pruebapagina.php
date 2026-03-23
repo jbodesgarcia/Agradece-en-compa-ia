@@ -17,7 +17,7 @@
 					
 					function mostrar(){
 						while($fila=$resultado->fetch_array()){
-						echo'<option value="'.$fila["nPuesto"].'">'.$fila["nombre"].'</option>';
+							echo'<option value="'.$fila["nPuesto"].'">'.$fila["nombre"].'</option>';
 						}
 					}
 					
