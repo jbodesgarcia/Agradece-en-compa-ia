@@ -1,3 +1,31 @@
+ <?php
+
+                    require "configdb.php";
+
+                    //funcion conectar
+                   function conectar(){
+                    $conexion = new mysqli(SERVIDOR, USUARIO, PASSWORD, BBDD);
+                    $conexion->set_charset("utf8");
+                    return $conexion;
+                   }
+
+
+                    //ejecutamos la consulta
+                    $conexion=conectar();
+                    $sql="SELECT nPuesto,nombre FROM alumno";
+                    $resultado=$conexion->query($sql);
+					
+					function mostrar(){
+						while($fila=$resultado->fetch_array()){
+						echo'<option value="'.$fila["nPuesto"].'">'.$fila["nombre"].'</option>';
+						}
+					}
+					
+                    //enseñamos en el option todos los valores de la tabla Alumnos
+					
+ ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,28 +42,10 @@
             <form>
                 <p>Para</p>
                 <select id="lista" name="lista">
-               <?php
-
-                    require "configdb.php";
-
-                    //funcion conectar
-                   function conectar(){
-                    $conexion = new mysqli(SERVIDOR, USUARIO, PASSWORD, BBDD);
-                    $conexion->set_charset("utf8");
-                    return $conexion;
-                   }
-
-
-                    //ejecutamos la consulta
-                    $conexion=conectar();
-                    $sql="SELECT nPuesto,nombre FROM alumno";
-                    $resultado=$conexion->query($sql);
-
-                    //enseñamos en el option todos los valores de la tabla Alumnos
-                   while($fila=$resultado->fetch_array()){
-                    echo'<option value="'.$fila["nPuesto"].'">'.$fila["nombre"].'</option>';
-                   }
-               ?>
+				
+				<?php
+					mostrar();
+				?>
 
                 </select>
                 <p>Quiero agradecerte</p>
