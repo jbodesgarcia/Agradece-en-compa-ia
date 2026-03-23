@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta charset="author" name="Jose Antonio Bodes García"/> 
+        <title>Inicio sesion</title>
+    </head>
+    <body>
+        <header>
+            <h1>Inicio de sesion</h1>
+        </header>
+
+        <main>
+            <!--Aquí le decimos que el form enviará por POST los datos a iniciosesion.php-->
+            <form action="iniciosesion.php" method="POST">
+                <p>correo</p>
+                <!--correo se enviará con el nombre correo-->
+                <input class="correo" type="text" placeholder="correo" name="correo">
+                <p>Contraseña</p>
+                <!--contraseña se enviará con el nombre pw-->
+                <input class="pw" type="password" placeholder="contraseña" name="pw">
+                <br>
+                <input type="submit">
+            </form>
+        </main>
+
+        <footer>
+            <p>Agradece en compañia</p>
+
+        </footer>
+
+    </body>
+</html>
