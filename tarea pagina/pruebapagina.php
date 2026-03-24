@@ -12,7 +12,7 @@
 
                     //ejecutamos la consulta
                     $conexion=conectar();
-                    $sql="SELECT nPuesto,nombre FROM alumno";
+                    $sql="SELECT nPuesto,nombre FROM Alumno";
                     $resultado=$conexion->query($sql);
 					
 					function mostrar($resultado){
