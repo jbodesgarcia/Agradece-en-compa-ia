@@ -15,7 +15,7 @@
                     $sql="SELECT nPuesto,nombre FROM alumno";
                     $resultado=$conexion->query($sql);
 					
-					function mostrar(){
+					function mostrar($resultado){
 						while($fila=$resultado->fetch_array()){
 							echo'<option value="'.$fila["nPuesto"].'">'.$fila["nombre"].'</option>';
 						}
@@ -44,7 +44,7 @@
                 <select id="lista" name="lista">
 				
 				<?php
-					mostrar();
+					mostrar($resultado);
 				?>
 
                 </select>
