@@ -1,0 +1,140 @@
+/* Estilos generales del body */
+body {
+   
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #C2A938, #DECFB1);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Encabezados */
+h1 {
+    color: #d3d0aa;
+    padding-top: 20px;
+}
+
+h2 {
+    color: rgb(104, 101, 64);
+    padding-top: 20px;
+}
+
+
+
+/* Formulario */
+form {
+    margin: 20px auto;
+    border: solid 2px rgba(238, 194, 113, 0.76);
+    background-color: rgba(255, 255, 255, 0.226);
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/*div*/
+div {
+    margin: 20px auto;
+    border: solid 2px rgba(238, 194, 113, 0.76);
+    background-color: rgba(255, 255, 255, 0.226);
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
+/* Input, Select y Textarea */
+input[type="text"]{
+     width: 70%;
+    margin-bottom: 15px;
+    border: solid 2px rgba(189, 183, 107, 0.582);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+input[type="password"]{
+     width: 70%;
+    margin-bottom: 15px;
+    border: solid 2px rgba(189, 183, 107, 0.582);
+    border-radius: 5px;
+    padding: 10px;
+} 
+
+select{
+     width: 70%;
+    margin-bottom: 15px;
+    border: solid 2px rgba(189, 183, 107, 0.582);
+    border-radius: 5px;
+    padding: 10px;
+} 
+
+textarea {
+    width: 70%;
+    margin-bottom: 15px;
+    border: solid 2px rgba(189, 183, 107, 0.582);
+    border-radius: 5px;
+    padding: 10px;
+    height: 100px;
+}
+
+
+
+/* Botones*/
+input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #C2A938;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #8a7827;
+}
+
+a{
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-weight: bold; 
+}
+
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+/*imagen*/
+.imagen{
+    margin: 15px auto;   
+    max-width: 150px;    
+    height: auto;
+}
+
+/*tabla*/
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Opcional, para mejor limpieza */
+}
+
+/* Alinear la primera celda a la izquierda y la segunda a la derecha */
+td {
+    width: 50%; /* Dividir el espacio a la mitad */
+    vertical-align: top; /* Para que el texto empiece arriba */
+    text-align: left; /* Rompe el centrado del body */
+    padding: 10px;
+}
+
+/*mensaje*/
+.mensaje{
+    background-color: rgb(168, 167, 138);
+    width: 100%;
+    height: 100px;
+}
