@@ -1,4 +1,4 @@
-INSERT INTO Agradecimiento(texto,idEmisor,idReceptor)
+INSERT INTO agradecimientos(mensaje,idEmisor,idReceptor)
 VALUES
 	('texto','01','02'),
 	('texto','01','03'),
